@@ -26,7 +26,7 @@ const NetflixCard = ({ actualData }) => {
 export default NetflixCard;
 
 const Wrapper = styled.section`
-  padding: 3rem 0;
+  padding: 4rem 0;
   font-family: "Lexend Deca Light";
 
   .container {
@@ -71,7 +71,7 @@ const Wrapper = styled.section`
     color: rgba(255, 255, 255, 0.98);
     text-transform: uppercase;
     font-size: 1.8rem;
-    word-break:break-all;
+    
     /* Media query to change font size based on container width */
     @media (max-width: 768px) {
       font-size: 1.6rem;
@@ -82,6 +82,7 @@ const Wrapper = styled.section`
     }
     @media (max-width: 400px) {
       font-size: 1rem;
+      word-wrap:break-word;
     }
   }
 
@@ -91,6 +92,9 @@ const Wrapper = styled.section`
     font-size: 0.8rem;
     line-height: 150%;
     letter-spacing: 2px;
+    @media (max-width: 400px) {
+      font-size: .4rem;
+    }
   }
 
   /* Custom styles to fix dots and slider buttons */
