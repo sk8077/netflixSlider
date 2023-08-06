@@ -26,7 +26,7 @@ const NetflixCard = ({ actualData }) => {
 export default NetflixCard;
 
 const Wrapper = styled.section`
-  padding-bottom: 3rem;
+  padding: 3rem 0;
   font-family: "Lexend Deca Light";
 
   .container {
@@ -45,7 +45,7 @@ const Wrapper = styled.section`
     width: 30%;
     height: 39%;
     margin: auto;
-    padding-top: 10px;
+   
   }
 
   .wrapper {
